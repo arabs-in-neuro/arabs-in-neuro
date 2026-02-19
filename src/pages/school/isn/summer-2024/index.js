@@ -1,9 +1,9 @@
 import Overview from "./components/overview";
-import PartnersSponsers from "../components/partnersSponsers";
-import SchoolComposition from "../components/schoolComposition";
-import Schedule from "../components/schedule";
-import SchoolDescription from "../components/schoolDescription";
-import HistoryButton from "../components/historyButton";
+import PartnersSponsers from "./components/partnersSponsers";
+import SchoolComposition from "./components/schoolComposition";
+import Schedule from "./components/schedule";
+import SchoolDescription from "./components/schoolDescription";
+import HistoryButton from "./components/historyButton";
 
 
 function IsnSchoolSummer2024() {

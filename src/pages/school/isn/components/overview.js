@@ -16,7 +16,7 @@ const Overview = () => {
     applyNow,
     studentsApplication,
     requiredTimeCommitment,
-  } = currentContent.isnSchool;
+  } = currentContent.isnSchool.y2025;
 
   // const applicationStatus = {
   //   en: "Stay tuned for the application opening!",
@@ -31,8 +31,8 @@ const Overview = () => {
     ar: "التقديمات مفتوحة حتى 15 يونيو.",
   };
   const schoolDuration = {
-    en: "This school will be held in person at Saadiyat Island - Abu Dhabi - United Arab Emirates\nEvent dates: 12 Oct 2025 - 18 Oct 2025\nOpen to: Africa, Asia-Pacific, Pan-Europe",
-    ar: "ستُقام هذه المدرسة حضوريًا في جزيرة السعديات - أبوظبي - الإمارات العربية المتحدة.\nتواريخ الفعالية: ١٢ أكتوبر ٢٠٢٥ - ١٨ أكتوبر ٢٠٢٥.\nمفتوحة لـ: أفريقيا، آسيا والمحيط الهادئ، وأوروبا.",
+    en: "This school was held in person at Center for Brain and Health, New York University Abu Dhabi - United Arab Emirates\nEvent dates: 13 Oct 2025 - 17 Oct 2025",
+    ar: "أقيمت هذه المدرسة حضوريًا في  مركز الدماغ والصحة بجامعة نيويورك أبوظبي - الإمارات العربية المتحدة.\nتواريخ الفعالية: ١٣ أكتوبر ٢٠٢٥ - ١٧ أكتوبر ٢٠٢٥.",
     };
 
   return (
@@ -73,27 +73,27 @@ const Overview = () => {
             rel="noopener noreferrer"
             className="w-72 h-[fit-content] bg-cRed shadow-md px-5 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto"
           >
-            <div>
-              <h2 className="font-extrabold text-xl py-3 text-cWhite">
-                {studentsApplication}
-              </h2>
-              <p className="text-md font-bold text-cWhite pb-3">
-                {applicationsDuration[preferredLanguage]}
-              </p>
+            {/*<div>*/}
+            {/*  <h2 className="font-extrabold text-xl py-3 text-cWhite">*/}
+            {/*    {studentsApplication}*/}
+            {/*  </h2>*/}
+            {/*  <p className="text-md font-bold text-cWhite pb-3">*/}
+            {/*    {applicationsDuration[preferredLanguage]}*/}
+            {/*  </p>*/}
 
-              <button
-                className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto"
-                type="submit"
-                role="button"
-              >
-                {applyNow}
-                <img
-                  className="ml-2"
-                  src="/icons/arrow-up-right.svg"
-                  alt="arrow"
-                />
-              </button>
-            </div>
+            {/*  <button*/}
+            {/*    className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto"*/}
+            {/*    type="submit"*/}
+            {/*    role="button"*/}
+            {/*  >*/}
+            {/*    {applyNow}*/}
+            {/*    <img*/}
+            {/*      className="ml-2"*/}
+            {/*      src="/icons/arrow-up-right.svg"*/}
+            {/*      alt="arrow"*/}
+            {/*    />*/}
+            {/*  </button>*/}
+            {/*</div>*/}
           </Link>
         </div>
       </div>

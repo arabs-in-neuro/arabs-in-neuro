@@ -1,0 +1,65 @@
+name: Deploy Next.js Static Site to Google Cloud Storage (Dev Branch Safe)
+
+on:
+  push:
+    branches:
+      - dev  # Trigger on dev branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Checkout code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2️⃣ Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      # 3️⃣ Cache dependencies
+      - name: Cache npm modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      # 4️⃣ Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # 5️⃣ Build and export Next.js static site
+      - name: Build and export site
+        run: npm run export
+        # ✅ Stops deployment if build fails
+
+      # 6️⃣ Authenticate to GCP
+      - name: Authenticate to GCP
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: '${{ secrets.GCP_SA_KEY }}'
+
+      # 7️⃣ Setup gcloud CLI
+      - name: Setup gcloud CLI
+        uses: google-github-actions/setup-gcloud@v2
+
+      # 8️⃣ Deploy to GCS safely
+      - name: Deploy to GCS
+        run: |
+          # Sync updated/new files
+          gsutil -m rsync -r build gs://ain.arabsinneuro.org
+          # Only remove deleted files if previous sync succeeded
+          gsutil -m rsync -d build gs://ain.arabsinneuro.org || echo "Skipping deletion due to failure"
+
+      # 9️⃣ Set Cache-Control headers
+      - name: Set Cache-Control headers
+        run: |
+          # Cache static assets for 1 year
+          gsutil -m setmeta -h "Cache-Control:public,max-age=31536000,immutable" gs://ain.arabsinneuro.org/_next/static/**
+          # Do not cache index.html
+          gsutil setmeta -h "Cache-Control:no-cache, max-age=0" gs://ain.arabsinneuro.org/index.html

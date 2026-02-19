@@ -13,7 +13,7 @@ const Overview = () => {
     applyNow,
     studentsApplication,
     requiredTimeCommitment,
-  } = currentContent.isnSchool;
+  } = currentContent.isnSchool.y2024;
 
   const applicationStatus = {
     en: "We are no longer accepting applications.",

@@ -5,6 +5,7 @@ import Feedback from "./components/feedback";
 import SchoolDescription from "./components/schoolDescription";
 import ResponsibilitiesComponent from "./components/responsibilites";
 
+
 function SchoolPage() {
   return (
     <div className="bg-cover bg-blend-soft-light bg-[url('/backgrounds/opportunities.svg')]">

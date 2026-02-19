@@ -5,7 +5,7 @@ import Link from "next/link";
 const HistoryButton = ({ url = "/school/isn" }) => {
   const languageContext = useContext(LanguageContext);
   const { currentContent } = languageContext;
-  const {previousSchool, latestSchool} = currentContent.isnSchool;
+  const {previousSchool, latestSchool} = currentContent.isnSchool.y2025;
   const description = url === "/school/isn" ? latestSchool : previousSchool;
 
   return (

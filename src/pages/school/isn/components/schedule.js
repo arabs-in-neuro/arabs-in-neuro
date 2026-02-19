@@ -11,7 +11,7 @@ const Schedule = () => {
     lectureTutorial,
     speaker,
     schedule,
-  } = currentContent.isnSchool;
+  } = currentContent.isnSchool.y2025;
 
   return (
     <div className="mx-auto px-5 md:px-20 py-10">

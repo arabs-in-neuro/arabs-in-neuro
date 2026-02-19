@@ -1,6 +1,7 @@
 import LanguageContext from "@/context/LanguageContext";
 import React, { useContext } from "react";
 
+
 const SchoolDescription = () => {
   const languageContext = useContext(LanguageContext);
   const { preferredLanguage, currentContent } = languageContext;
@@ -21,7 +22,7 @@ const SchoolDescription = () => {
     day5Title,
     day5Desc,
     day5DayNb,
-  } = currentContent.isnSchool;
+  } = currentContent.isnSchool.y2025;
 
   return (
     <div className="container mx-auto px-5 py-10">

@@ -14,7 +14,7 @@ const SchoolComposition = () => {
     projectOpportunity,
     networkingAndSocials,
     networkingDescription,
-  } = currentContent.isnSchool;
+  } = currentContent.isnSchool.y2025;
 
   return (
     <div className="container mx-auto px-5 py-10">
