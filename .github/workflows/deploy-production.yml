@@ -8,8 +8,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: contains(github.event.head_commit.message, 'Merge branch '\''dev'\''')
-    
+    if: contains(github.event.head_commit.message, 'Merge branch dev')
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -36,6 +36,5 @@ jobs:
       - name: Deploy to Production Bucket
         run: |
           gsutil -m rsync -r build gs://www.arabsinneuro.org
-          # Optional: set cache headers
           gsutil -m setmeta -h "Cache-Control:public,max-age=31536000,immutable" gs://www.arabsinneuro.org/_next/static/**
           gsutil setmeta -h "Cache-Control:no-cache, max-age=0" gs://www.arabsinneuro.org/index.html
