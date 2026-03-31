@@ -36,6 +36,11 @@ const Overview = () => {
   //   en: "We are no longer accepting applications; please check your email for an acceptance notification by June 15.",
   //   ar: "لم نعد نقبل طلبات الالتحاق، يرجى التحقق من بريدك الإلكتروني لمعرفة نتيجة القبول بحلول 15 يونيو.",
   // };
+
+  const LinktoDetails = {
+    en: "School Details and Study Materials",
+    ar: "تفاصيل المدرسة ومواد الدراسة",
+  };
   
   
   const schoolDuration = {
@@ -73,6 +78,12 @@ const Overview = () => {
           <div className="w-72 h-[fit-content] bg-cRed shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto">
             <h2 className="font-extrabold text-x py-3 text-cWhite font-bold">
               {applicationStatus[preferredLanguage]}
+            </h2>
+          </div>
+
+          <div className="w-72 h-[fit-content] bg-cRed shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto">
+            <h2 className="font-extrabold text-x py-3 text-cWhite font-bold">
+              <Link href='./school/details'>{LinktoDetails[preferredLanguage]}</Link>
             </h2>
           </div>
 

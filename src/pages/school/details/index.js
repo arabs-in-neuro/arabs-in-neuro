@@ -10,10 +10,10 @@ import {
   calendarUrl,
   collabsData,
   applyLink
-} from "../../../../public/data/school/2023";
-import SchoolComponent from "../components/schoolComponent";
+} from "../../../../public/data/school/schooldetails";
+import SchoolComponent from "./components/schoolComponent";
 
-function School2023() {
+function School() {
   const languageContext = React.useContext(LanguageContext);
   const { preferredLanguage } = languageContext;
 
@@ -26,7 +26,6 @@ function School2023() {
 
   return (
     <SchoolComponent
-      year="2023"
       participantsNoteData={participantsNoteData}
       languageSpecificInstructors={languageSpecificInstructors}
       materialsData={materialsData}
@@ -40,4 +39,4 @@ function School2023() {
   );
 }
 
-export default School2023;
+export default School;

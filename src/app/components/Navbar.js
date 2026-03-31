@@ -14,7 +14,6 @@ function Navbar({ setPreferredLanguage }) {
     { href: "/about", label: currentContent.navbar.about },
     { href: "/school/isn", label: currentContent.navbar.isnSchool},
     { href: "/school", label: currentContent.navbar.courses },
-    { href: "/details/2025", label: currentContent.navbar.courseDetails },
     { href: "/faq", label: currentContent.navbar.faq },
     { href: "/join", label: currentContent.navbar.opportunities },
     { href: "/donate", label: currentContent.navbar.donate },

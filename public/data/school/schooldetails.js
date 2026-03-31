@@ -336,13 +336,23 @@ export const collabsData = [
       ar: "بفخر يدعمها"
     },
     items: [
+      { image: "/assets/school/kavli.png", alt: "Kavli Foundation" },
+    ]
+  },
+  {
+  type: {
+      en: "Previously supported by",
+      ar: "الداعمين السابقين"
+    },
+    items: [
       { image: "/assets/school/simons.png", alt: "Simons Foundation" },
+      { image: "/assets/school/ibro.jpg", alt: "Ibro" },
     ]
   },
   {
     type: {
-      en: "Partners",
-      ar: "الشركاء"
+      en: "Partners across the years",
+      ar: "الشركاء على مدار السنين"
     },
     items: [
       { image: "/assets/school/ieee_sac.png", alt: "IEEE R8 SAC" }
