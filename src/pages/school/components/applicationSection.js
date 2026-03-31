@@ -18,9 +18,14 @@ const ApplicationSection = () => {
     ar: "يغلق التقديم في 15 مايو 2025",
   };
 
+  // const applicationsDuration = {
+  //   en: "We are no longer accepting applications. ",
+  //   ar: "لم نعد نقبل طلبات الالتحاق .",
+  // };
+
   const applicationsDuration = {
-    en: "We are no longer accepting applications. ",
-    ar: "لم نعد نقبل طلبات الالتحاق .",
+    en: "Application period has not started yet. ",
+    ar: "لم تبدا فتره التقديم بعد.",
   };
 
   return (

@@ -17,24 +17,30 @@ const Overview = () => {
     teacherAssistantsApplication,
   } = currentContent.school;
 
+
   const applicationStatus = {
-    en: "Applications are closed",
-    ar: "تم إغلاق باب التقديم",
+    en: "Applications will open from April 6 until April 19. ",
+     ar: " سيتم فتح باب التقديم من 6 ابريل حتى 19 ابريل.",
   };
-  
-  // const applicationsDuration = {
-  //   en: "Applications will open from May 1 until May 15. ",
-  //   ar: " سيتم فتح باب التقديم من 1 مايو حتى 15 مايو.",
+
+  // const applicationStatus = {
+  //   en: "Applications are closed",
+  //   ar: "تم إغلاق باب التقديم",
   // };
+  
   const applicationsDuration = {
-    en: "We are no longer accepting applications; please check your email for an acceptance notification by June 15.",
-    ar: "لم نعد نقبل طلبات الالتحاق، يرجى التحقق من بريدك الإلكتروني لمعرفة نتيجة القبول بحلول 15 يونيو.",
+    en: "Applications will open from April 6 until April 19. ",
+    ar: " سيتم فتح باب التقديم من 6 ابريل حتى 19 ابريل.",
   };
+  // const applicationsDuration = {
+  //   en: "We are no longer accepting applications; please check your email for an acceptance notification by June 15.",
+  //   ar: "لم نعد نقبل طلبات الالتحاق، يرجى التحقق من بريدك الإلكتروني لمعرفة نتيجة القبول بحلول 15 يونيو.",
+  // };
   
   
   const schoolDuration = {
-    en: "The school's duration is 3 weeks, starting from September 1 until September 19.",
-    ar: "مدة المدرسة 3 أسابيع، تبدأ من 1 سبتمبر حتى 19 سبتمبر.",
+    en: "The school's duration is 3 weeks, starting from July 27 until August 14.",
+    ar: "مدة المدرسة 3 أسابيع، تبدأ من 27 يوليو حتى 14 اغسطس.",
   };
 
   return (
