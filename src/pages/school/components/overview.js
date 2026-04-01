@@ -44,8 +44,8 @@ const Overview = () => {
   
   
   const schoolDuration = {
-    en: "The school's duration is 3 weeks, starting from July 27 until August 14.",
-    ar: "مدة المدرسة 3 أسابيع، تبدأ من 27 يوليو حتى 14 اغسطس.",
+    en: "The school's duration is 3 weeks, starting from July 13 until 31.",
+    ar: "مدة المدرسة 3 أسابيع، تبدأ من 13 حتى 31 يوليو.",
   };
 
   return (
