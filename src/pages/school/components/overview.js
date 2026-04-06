@@ -29,8 +29,8 @@ const Overview = () => {
   // };
   
   const applicationsDuration = {
-    en: "Applications will open from April 6 until April 19. ",
-    ar: " سيتم فتح باب التقديم من 6 ابريل حتى 19 ابريل.",
+    en: "Applications are open from April 6 until April 19. ",
+    ar: "باب التقديم مفتوح من 6 ابريل حتى 19 ابريل.",
   };
   // const applicationsDuration = {
   //   en: "We are no longer accepting applications; please check your email for an acceptance notification by June 15.",
@@ -75,11 +75,11 @@ const Overview = () => {
 
         {/* Banners Container */}
         <div className="md:col-span-1 flex flex-col justify-start items-start">
-          <div className="w-72 h-[fit-content] bg-cRed shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto">
-            <h2 className="font-extrabold text-x py-3 text-cWhite font-bold">
-              {applicationStatus[preferredLanguage]}
-            </h2>
-          </div>
+          {/*<div className="w-72 h-[fit-content] bg-cRed shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto">*/}
+          {/*  <h2 className="font-extrabold text-x py-3 text-cWhite font-bold">*/}
+          {/*    {applicationStatus[preferredLanguage]}*/}
+          {/*  </h2>*/}
+          {/*</div>*/}
 
           <div className="w-72 h-[fit-content] bg-cRed shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto">
             <h2 className="font-extrabold text-x py-3 text-cWhite font-bold">
@@ -87,7 +87,7 @@ const Overview = () => {
             </h2>
           </div>
 
-          {/* <Link
+          <Link
             href={studentsApplicationLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -136,7 +136,7 @@ const Overview = () => {
                 />
               </button>
             </div>
-          </Link> */}
+          </Link>
         </div>
       </div>
     </div>

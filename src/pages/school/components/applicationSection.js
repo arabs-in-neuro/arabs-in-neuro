@@ -23,9 +23,14 @@ const ApplicationSection = () => {
   //   ar: "لم نعد نقبل طلبات الالتحاق .",
   // };
 
+  // const applicationsDuration = {
+  //   en: "Application period has not started yet. ",
+  //   ar: "لم تبدا فتره التقديم بعد.",
+  // };
+
   const applicationsDuration = {
-    en: "Application period has not started yet. ",
-    ar: "لم تبدا فتره التقديم بعد.",
+    en: "Applications are open till 19-April ",
+    ar: "باب التقديم مفتوح حتى ١٩ أبريل.",
   };
 
   return (

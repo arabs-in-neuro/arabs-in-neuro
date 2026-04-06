@@ -10,9 +10,9 @@ export const linkedinLink =
   "https://www.linkedin.com/company/arabs-in-neuroscience-ain/mycompany/";
 export const linkedinName = "arabs-in-neuroscience-ain";
 export const studentsApplicationLink =
-  "https://docs.google.com/forms/d/e/1FAIpQLSeElLq_EkRTTwLWv0jSj3SDJCaB-ZWMvcxF13mF3CryDdtq-g/closedform";
+  "https://forms.gle/h84xuUKExVS3zmgQ7";
 export const taApplicationLink =
-  "https://docs.google.com/forms/d/e/1FAIpQLScDetKfXUjnhoAYGH1f5LuJKzSypJ6EOSt6-WLys4XGzcV4Bw/closedform";
+  "https://forms.gle/eAVK9bhQ6HbYpMri6";
 export const eegSchoolApplicationLink =
   "https://ibro.smapply.org/prog/school_25aprc1/";
 export const ainMembershipFormLink =
