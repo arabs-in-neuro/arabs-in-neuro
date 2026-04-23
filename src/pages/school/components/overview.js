@@ -29,8 +29,8 @@ const Overview = () => {
   // };
   
   const applicationsDuration = {
-    en: "Applications are open from April 6 until April 19. ",
-    ar: "باب التقديم مفتوح من 6 ابريل حتى 19 ابريل.",
+    en: "Applications are open from April 6 until April 26. ",
+    ar: "باب التقديم مفتوح من 6 ابريل حتى 26 ابريل.",
   };
   // const applicationsDuration = {
   //   en: "We are no longer accepting applications; please check your email for an acceptance notification by June 15.",

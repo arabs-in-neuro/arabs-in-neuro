@@ -330,15 +330,15 @@ export const courseDaysData = {
 
 
 export const collabsData = [
-  {
-    type: {
-      en: "Proudly supported by",
-      ar: "بفخر يدعمها"
-    },
-    items: [
-      { image: "/assets/school/kavli.png", alt: "Kavli Foundation" },
-    ]
-  },
+  // {
+  //   type: {
+  //     en: "Proudly supported by",
+  //     ar: "بفخر يدعمها"
+  //   },
+  //   items: [
+  //     { image: "/assets/school/kavli.png", alt: "Kavli Foundation" },
+  //   ]
+  // },
   {
   type: {
       en: "Previously supported by",

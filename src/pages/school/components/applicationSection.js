@@ -29,8 +29,8 @@ const ApplicationSection = () => {
   // };
 
   const applicationsDuration = {
-    en: "Applications are open till 19-April ",
-    ar: "باب التقديم مفتوح حتى ١٩ أبريل.",
+    en: "Applications are open till 26-April ",
+    ar: "باب التقديم مفتوح حتى 26 أبريل.",
   };
 
   return (
