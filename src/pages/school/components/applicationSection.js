@@ -18,20 +18,20 @@ const ApplicationSection = () => {
     ar: "يغلق التقديم في 15 مايو 2025",
   };
 
-  // const applicationsDuration = {
-  //   en: "We are no longer accepting applications. ",
-  //   ar: "لم نعد نقبل طلبات الالتحاق .",
-  // };
+  const applicationsDuration = {
+    en: "We are no longer accepting applications. ",
+    ar: "لم نعد نقبل طلبات الالتحاق .",
+  };
 
   // const applicationsDuration = {
   //   en: "Application period has not started yet. ",
   //   ar: "لم تبدا فتره التقديم بعد.",
   // };
 
-  const applicationsDuration = {
-    en: "Applications are open till 26-April ",
-    ar: "باب التقديم مفتوح حتى 26 أبريل.",
-  };
+  // const applicationsDuration = {
+  //   en: "Applications are open till 26-April ",
+  //   ar: "باب التقديم مفتوح حتى 26 أبريل.",
+  // };
 
   return (
     <div className="text-cN800 mx-auto px-5 lg:px-20 lg:py-10 py-5">

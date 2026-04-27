@@ -18,24 +18,24 @@ const Overview = () => {
   } = currentContent.school;
 
 
-  const applicationStatus = {
-    en: "Applications will open from April 6 until April 19. ",
-     ar: " سيتم فتح باب التقديم من 6 ابريل حتى 19 ابريل.",
-  };
-
   // const applicationStatus = {
-  //   en: "Applications are closed",
-  //   ar: "تم إغلاق باب التقديم",
+  //   en: "Applications will open from April 6 until April 19. ",
+  //    ar: " سيتم فتح باب التقديم من 6 ابريل حتى 19 ابريل.",
   // };
-  
-  const applicationsDuration = {
-    en: "Applications are open from April 6 until April 26. ",
-    ar: "باب التقديم مفتوح من 6 ابريل حتى 26 ابريل.",
+
+  const applicationStatus = {
+    en: "Applications are closed",
+    ar: "تم إغلاق باب التقديم",
   };
+  
   // const applicationsDuration = {
-  //   en: "We are no longer accepting applications; please check your email for an acceptance notification by June 15.",
-  //   ar: "لم نعد نقبل طلبات الالتحاق، يرجى التحقق من بريدك الإلكتروني لمعرفة نتيجة القبول بحلول 15 يونيو.",
+  //   en: "Applications are open from April 6 until April 26. ",
+  //   ar: "باب التقديم مفتوح من 6 ابريل حتى 26 ابريل.",
   // };
+  const applicationsDuration = {
+    en: "We are no longer accepting applications; please check your email for an acceptance notification by May 31.",
+    ar: "لم نعد نقبل طلبات الالتحاق، يرجى التحقق من بريدك الإلكتروني لمعرفة نتيجة القبول بحلول 31 مايو.",
+  };
 
   const LinktoDetails = {
     en: "School Details and Study Materials",
@@ -75,11 +75,11 @@ const Overview = () => {
 
         {/* Banners Container */}
         <div className="md:col-span-1 flex flex-col justify-start items-start">
-          {/*<div className="w-72 h-[fit-content] bg-cRed shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto">*/}
-          {/*  <h2 className="font-extrabold text-x py-3 text-cWhite font-bold">*/}
-          {/*    {applicationStatus[preferredLanguage]}*/}
-          {/*  </h2>*/}
-          {/*</div>*/}
+          <div className="w-72 h-[fit-content] bg-cRed shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto">
+            <h2 className="font-extrabold text-x py-3 text-cWhite font-bold">
+              {applicationStatus[preferredLanguage]}
+            </h2>
+          </div>
 
           <div className="w-72 h-[fit-content] bg-cRed shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto">
             <h2 className="font-extrabold text-x py-3 text-cWhite font-bold">
@@ -87,56 +87,56 @@ const Overview = () => {
             </h2>
           </div>
 
-          <Link
-            href={studentsApplicationLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-72 h-[fit-content] bg-cRed shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto"
-          >
-            <div>
-              <h2 className="font-extrabold text-xl py-3 text-cWhite font-bold">
-                {studentsApplication}
-              </h2>
+          {/*<Link*/}
+          {/*  href={studentsApplicationLink}*/}
+          {/*  target="_blank"*/}
+          {/*  rel="noopener noreferrer"*/}
+          {/*  className="w-72 h-[fit-content] bg-cRed shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto"*/}
+          {/*>*/}
+          {/*  <div>*/}
+          {/*    <h2 className="font-extrabold text-xl py-3 text-cWhite font-bold">*/}
+          {/*      {studentsApplication}*/}
+          {/*    </h2>*/}
 
-              <button
-                className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto"
-                type="submit"
-                role="button"
-              >
-                {applyNow}
-                <img
-                  className="ml-2"
-                  src="/icons/arrow-up-right.svg"
-                  alt="arrow"
-                />
-              </button>
-            </div>
-          </Link>
-          <Link
-            href={taApplicationLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-72 h-[fit-content] bg-cGreen shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto"
-          >
-            <div>
-              <h2 className="font-extrabold text-xl py-2 text-cWhite font-bold">
-                {teacherAssistantsApplication}
-              </h2>
+          {/*    <button*/}
+          {/*      className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto"*/}
+          {/*      type="submit"*/}
+          {/*      role="button"*/}
+          {/*    >*/}
+          {/*      {applyNow}*/}
+          {/*      <img*/}
+          {/*        className="ml-2"*/}
+          {/*        src="/icons/arrow-up-right.svg"*/}
+          {/*        alt="arrow"*/}
+          {/*      />*/}
+          {/*    </button>*/}
+          {/*  </div>*/}
+          {/*</Link>*/}
+          {/*<Link*/}
+          {/*  href={taApplicationLink}*/}
+          {/*  target="_blank"*/}
+          {/*  rel="noopener noreferrer"*/}
+          {/*  className="w-72 h-[fit-content] bg-cGreen shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto"*/}
+          {/*>*/}
+          {/*  <div>*/}
+          {/*    <h2 className="font-extrabold text-xl py-2 text-cWhite font-bold">*/}
+          {/*      {teacherAssistantsApplication}*/}
+          {/*    </h2>*/}
 
-              <button
-                className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto"
-                type="submit"
-                role="button"
-              >
-                {applyNow}
-                <img
-                  className="ml-2"
-                  src="/icons/arrow-up-right.svg"
-                  alt="arrow"
-                />
-              </button>
-            </div>
-          </Link>
+          {/*    <button*/}
+          {/*      className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto"*/}
+          {/*      type="submit"*/}
+          {/*      role="button"*/}
+          {/*    >*/}
+          {/*      {applyNow}*/}
+          {/*      <img*/}
+          {/*        className="ml-2"*/}
+          {/*        src="/icons/arrow-up-right.svg"*/}
+          {/*        alt="arrow"*/}
+          {/*      />*/}
+          {/*    </button>*/}
+          {/*  </div>*/}
+          {/*</Link>*/}
         </div>
       </div>
     </div>
