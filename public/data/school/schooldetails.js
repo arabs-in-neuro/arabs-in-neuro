@@ -50,6 +50,16 @@ export const instructorsData = {
       affiliation: "Krembil Centre for Neuroinformatics",
       url: "https://www.linkedin.com/in/ramzihalabiphd/",
     },
+    {
+      name: "Ornella Dakwar-Kawar",
+      affiliation: "The Hebrew University of Jerusalem",
+      url: "https://www.linkedin.com/in/ornella-dakwar-kawar/",
+    },
+    {
+      name: "Sarah Elnozahy",
+      affiliation: "Sainsbury Wellcome Centre",
+      url: "https://www.sainsburywellcome.org/people/sarah-elnozahy",
+    },
   ],
   ar: [
     {
@@ -86,6 +96,16 @@ export const instructorsData = {
       name: "رمزي حلبي",
       affiliation: "مركز كرمبيل لعلم الأعصاب الحاسوبي",
       url: "https://www.linkedin.com/in/ramzihalabiphd/",
+    },
+    {
+      name: "اورنيلا دكور-قعوار",
+      affiliation: " الجامعة العبرية, القدس",
+      url: "https://www.linkedin.com/in/ornella-dakwar-kawar/",
+    },
+    {
+      name: "سارة النزهي",
+      affiliation: "مركز سانسبري ولكم",
+      url: "https://www.sainsburywellcome.org/people/sarah-elnozahy",
     },
   ],
 };
