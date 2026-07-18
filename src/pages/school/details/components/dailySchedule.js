@@ -1,5 +1,6 @@
 import LanguageContext from "@/context/LanguageContext";
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useMemo, useState } from "react";
+import jstz from "jstimezonedetect";
 import CourseDays from "./courseComponents";
 
 
@@ -13,6 +14,21 @@ const DailySchedule = ({ calendarUrl, courseDaysData }) => {
     calendarImportInfo,
     calendarImportInfoCompletion,
   } = currentContent.details;
+  const [timezone, setTimezone] = useState("");
+
+  useEffect(() => {
+  const tz = jstz.determine().name();
+  setTimezone(tz);
+}, []);
+
+  const iframeUrl = useMemo(() => {
+  if (!calendarUrl) return "";
+
+  const url = new URL(calendarUrl);
+  url.searchParams.set("ctz", timezone);
+
+  return url.toString();
+}, [calendarUrl, timezone]);
 
   return (
     <>
@@ -26,7 +42,7 @@ const DailySchedule = ({ calendarUrl, courseDaysData }) => {
         <div className="overflow-x-auto">
           <div className="lg:px-10 w-screen flex justify-center lg:w-full">
             <iframe
-              src={calendarUrl}
+              src={iframeUrl}
               width="800"
               height="600"
               frameBorder="0"
