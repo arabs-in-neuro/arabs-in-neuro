@@ -55,6 +55,12 @@ export const instructorsData = {
       affiliation: "The Hebrew University of Jerusalem",
       url: "https://www.linkedin.com/in/ornella-dakwar-kawar/",
     },
+
+    {
+      name: "Kirollus Abdallah",
+      affiliation: "Capital University",
+      url: "https://www.linkedin.com/in/kynabdallah/",
+    },
     {
       name: "Sarah Elnozahy",
       affiliation: "Sainsbury Wellcome Centre",
@@ -101,6 +107,11 @@ export const instructorsData = {
       name: "اورنيلا دكور-قعوار",
       affiliation: " الجامعة العبرية, القدس",
       url: "https://www.linkedin.com/in/ornella-dakwar-kawar/",
+    },
+      {
+      name: "كيرلس عبدالله",
+      affiliation: "جامعة العاصمة",
+      url: "https://www.linkedin.com/in/kynabdallah/",
     },
     {
       name: "سارة النزهي",
