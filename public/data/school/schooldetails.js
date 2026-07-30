@@ -221,10 +221,22 @@ export const materialsData = [
     videoLink: "https://youtu.be/poKxgBnsTFs?si=7yiHN3rzS35tqVss",
   },
   {
-    topic: "Projects Topic 2 - EEG (W3D4 - W3D5)",
+    topic: "Projects Topic 2 - Motor Imagery EEG (W3D4 - W3D5)",
     tutorialLink:
       "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/projects/eeg/Project2_MI_Project_AiN2023.ipynb",
     videoLink: "https://youtu.be/hq8TVMB74yI?si=ttNqnu91a3wfINTo",
+  },
+  {
+    topic: "Projects Topic 3 - Brain stimulation and EEG (W3D4 - W3D5)",
+    // tutorialLink:
+    //   "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/projects/brian_sim/project_4_5_briansim.ipynb",
+    videoLink: "https://youtu.be/UW2vUW6Pby4?si=qUutYy18O7R3UmUw",
+  },
+  {
+    topic: "Projects Topic 4 & 5 - Brian2 simulation (W3D4 - W3D5)",
+    tutorialLink:
+      "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/projects/brian_sim/project_4_5_briansim.ipynb",
+    // videoLink: "https://youtu.be/hq8TVMB74yI?si=ttNqnu91a3wfINTo",
   },
 ];
 
