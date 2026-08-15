@@ -1,6 +1,6 @@
 export const teamLeadsData = [
     {
-        "name": {"en": "Mohamed Abdelhack", "ar": "محمد عبد الحكيم"},
+        "name": {"en": "Mohamed Abdelhack", "ar": "محمد عبد الحق"},
         "team": {"en": "Communication", "ar": "الاتصال"},
         "affiliation": {"en": "Krembil Centre for Neuroinformatics", "ar": "مركز كريمبيل لعلم الأعصاب والمعلوماتية"},
         "image": "/data/team/mabdelhack.jpg",
@@ -19,13 +19,13 @@ export const teamLeadsData = [
         "emailText": "rsubaie@arabsinneuro.org"
     },
     {
-        "name": {"en": "Abdalrhman Mostafa", "ar": "عبد الرحمن مصطفى"},
+        "name": {"en": "Nada Salah", "ar": "ندى صلاح"},
         "team": {"en": "Fundraising", "ar": "جمع التبرعات"},
-        "affiliation": {"en": "Institute of Global Health and Human Ecology, The American University in Cairo", "ar": "معهد الصحة العالمية والبيئة البشرية، الجامعة الأمريكية بالقاهرة"},
-        "image": "/data/team/abdalrhman.jpg",
-        "linkedinLink": "https://www.linkedin.com/in/abdalrhman-mostafa-/",
-        "twitterLink": "https://twitter.com/Sir_tries_a_lot",
-        "emailText": "amostafa@arabsinneuro.org"
+        "affiliation": {"en": "Egypt-Japan University of Science and Technology", "ar": "الجامعة المصرية اليابانية للعلوم والتكنولوجيا"},
+        "image": "/data/team/nadasalah.jpg",
+        "linkedinLink": "https://www.linkedin.com/in/nada-o-salah/",
+        // "twitterLink": "https://twitter.com/Sir_tries_a_lot",
+        "emailText": "nsalah@arabsinneuro.org"
     },
     {
         "name": {"en": "Mai Gamal", "ar": "مي جمال"},
